@@ -20,6 +20,8 @@ services:
       - DB_NAME=moinaksDB
       - DB_USER=moinakdey
       - DB_PASS=qwerty@8
+      - HOST=127.0.0.1
+      - PORT=8000
     depends_on:
       - db
 
