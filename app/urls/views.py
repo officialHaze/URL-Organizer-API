@@ -33,6 +33,7 @@ def create_short_url(long_url):
     '''create a random short id of 4 chars'''
     short_id = su.random(length=4)
     short_url = f'http://{os.environ.get("HOST")}:{os.environ.get("PORT")}/{short_id}/'
+    
     '''update the database'''
     short_url_instance = update_db(pid=short_id, sh_url=short_url, ln_url=long_url)
     return short_url_instance
@@ -52,21 +53,29 @@ def create_single_link(short_urls):
 
 '''helper function to update the database'''
 def update_db(pid, sh_url, ln_url):
-    instance = URL.objects.create(pid=pid, long_url=ln_url, short_url=sh_url)
-    print(instance)
-    return instance
+    try:
+        instance = URL.objects.create(pid=pid, long_url=ln_url, short_url=sh_url)
+        return instance
+    except (DatabaseError, OperationalError):
+        if DatabaseError:
+            raise DatabaseError
+        raise OperationalError
 
 
 '''helper function to update the single link database'''
 def update_singlelink_db(id, single_link, short_urls):
-    for url in short_urls:
-        instance = SingleLink.objects.create(short_id=id, single_link=single_link, short_url=url)
+    try:
+        for url in short_urls:
+            SingleLink.objects.create(short_id=id, single_link=single_link, short_url=url)
+    except (DatabaseError, OperationalError):
+        if DatabaseError:
+            raise DatabaseError
+        raise OperationalError
 
 
 @api_view(["POST"])
-def shorten_url(req, *args, **kwargs):
+def organize_urls(req, *args, **kwargs):
     long_urls = req.data.get('long_urls')
-
    #check to see if the url is a valid url 
     if are_valid_urls(long_urls):
         short_url_list = []
