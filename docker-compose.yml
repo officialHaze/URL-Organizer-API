@@ -14,6 +14,7 @@ services:
       - ./app:/app
     environment:
       - SECRET_KEY=djangosecretkey
+      - ADMIN_KEY=randomadminkey
       - DEBUG=1
       - DB_HOST=db
       - DB_NAME=moinaksDB
