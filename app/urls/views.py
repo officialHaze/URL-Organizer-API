@@ -42,8 +42,8 @@ def create_short_url(long_url):
 '''create a single link for all the short urls'''
 def create_single_link(short_urls):
     su = shortuuid.ShortUUID()
-    '''create a random uuid of 8 chars'''
-    id = su.random(length=8)
+    '''create a random uuid of 5 chars'''
+    id = su.random(length=5)
     single_link = f'http://{os.environ.get("HOST")}/{id}/'
 
     '''uddate the Single Link DB'''

@@ -20,7 +20,10 @@ def get_site_logo(site_sh_url):
     site_url = URL.objects.filter(short_url=site_sh_url)[0].long_url
     parts = urllib.parse.urlsplit(site_url)
     hostname = parts.netloc
-    sitename = hostname.rsplit(".")[0]
+    if hostname.startswith('www'):
+        sitename = hostname.rsplit(".")[1]
+    else:
+        sitename = hostname.rsplit(".")[0]
     logo = "https://images1-fabric.practo.com/dermafollix-hair-transplant-and-skin-clinic-surat-1449058531-565ee0e388f5a.png"
     for logo_detail in LOGOS:
         logo_name = logo_detail.get("name")
