@@ -21,7 +21,7 @@ def get_site_logo(site_sh_url):
     parts = urllib.parse.urlsplit(site_url)
     hostname = parts.netloc
     sitename = hostname.rsplit(".")[0]
-    logo = "https://cdn.vectorstock.com/i/preview-1x/82/99/no-image-available-like-missing-picture-vector-43938299.jpg"
+    logo = "https://images1-fabric.practo.com/dermafollix-hair-transplant-and-skin-clinic-surat-1449058531-565ee0e388f5a.png"
     for logo_detail in LOGOS:
         logo_name = logo_detail.get("name")
         if logo_name == sitename:
