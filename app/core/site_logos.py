@@ -1,15 +1,15 @@
 LOGOS = [
     {
         "name":"youtube",
-        "logo": "https://w7.pngwing.com/pngs/936/468/png-transparent-youtube-logo-youtube-logo-computer-icons-subscribe-angle-rectangle-airplane-thumbnail.png",
+        "logo": "https://www.freepnglogos.com/uploads/youtube-logo-red-hd-13.png",
     },
     {
         "name":"spotify",
-        "logo":"https://w7.pngwing.com/pngs/420/432/png-transparent-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle-logo-thumbnail.png"
+        "logo":"https://www.pngmart.com/files/22/Spotify-Logo-PNG-HD.png"
     },
     {
         "name":"google",
-        "logo":"https://w7.pngwing.com/pngs/989/129/png-transparent-google-logo-google-search-meng-meng-company-text-logo-thumbnail.png"
+        "logo":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
     },
     {
         "name":"yahoo",
@@ -21,10 +21,10 @@ LOGOS = [
     },
     {
         "name":"github",
-        "logo":"https://w7.pngwing.com/pngs/115/663/png-transparent-github-computer-icons-directory-github-mammal-cat-like-mammal-carnivoran-thumbnail.png"
+        "logo":"https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png"
     },
     {
         "name":"instagram",
-        "logo":"https://e7.pngegg.com/pngimages/953/528/png-clipart-instagram-icon-logo-desktop-computer-icons-instagram-miscellaneous-text.png"
+        "logo":"https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-windows-phone-all-you-need-know-9.png"
     }
 ]
