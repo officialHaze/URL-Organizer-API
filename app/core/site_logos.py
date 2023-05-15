@@ -21,7 +21,7 @@ LOGOS = [
     },
     {
         "name":"github",
-        "logo":"https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png"
+        "logo":"https://pngimg.com/uploads/github/github_PNG58.png"
     },
     {
         "name":"instagram",
