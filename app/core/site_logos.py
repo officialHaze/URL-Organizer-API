@@ -1,19 +1,19 @@
 LOGOS = [
     {
         "name":"youtube",
-        "logo": "https://img.freepik.com/free-vector/youtube-concept_23-2147862172.jpg",
+        "logo": "https://w7.pngwing.com/pngs/936/468/png-transparent-youtube-logo-youtube-logo-computer-icons-subscribe-angle-rectangle-airplane-thumbnail.png",
     },
     {
         "name":"spotify",
-        "logo":"https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/folder_920_201707260845-1.png"
+        "logo":"https://w7.pngwing.com/pngs/420/432/png-transparent-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle-logo-thumbnail.png"
     },
     {
         "name":"google",
-        "logo":"https://static.vecteezy.com/system/resources/previews/010/353/285/original/colourful-google-logo-on-white-background-free-vector.jpg"
+        "logo":"https://w7.pngwing.com/pngs/989/129/png-transparent-google-logo-google-search-meng-meng-company-text-logo-thumbnail.png"
     },
     {
         "name":"yahoo",
-        "logo":"https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/yahoo-512.png"
+        "logo":"https://www.freepnglogos.com/uploads/yahoo-logo-png/yahoo-logo-png-y-logo-yahoo-social-media-icons-2.png"
     },
     {
         "name":"linkedin",
@@ -21,6 +21,10 @@ LOGOS = [
     },
     {
         "name":"github",
-        "logo":"https://i.pinimg.com/originals/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.png"
+        "logo":"https://w7.pngwing.com/pngs/115/663/png-transparent-github-computer-icons-directory-github-mammal-cat-like-mammal-carnivoran-thumbnail.png"
+    },
+    {
+        "name":"instagram",
+        "logo":"https://e7.pngegg.com/pngimages/953/528/png-clipart-instagram-icon-logo-desktop-computer-icons-instagram-miscellaneous-text.png"
     }
 ]
