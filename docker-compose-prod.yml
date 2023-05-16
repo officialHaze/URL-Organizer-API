@@ -16,7 +16,6 @@ services:
       - DB_PASS=${DB_PASS}
       - DOMAIN=${DOMAIN}
       - ALLOWED_HOSTS=${ALLOWED_HOSTS}
-      - DEBUG=1
     depends_on:
       - db
 
