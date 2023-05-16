@@ -32,7 +32,7 @@ def create_short_url(long_url):
     su = shortuuid.ShortUUID()
     '''create a random short id of 4 chars'''
     short_id = su.random(length=4)
-    short_url = f'http://{os.environ.get("HOST")}/{short_id}/'
+    short_url = f'https://{os.environ.get("DOMAIN")}/{short_id}/'
     
     '''update the database'''
     short_url_instance = update_db(pid=short_id, sh_url=short_url, ln_url=long_url)
@@ -44,7 +44,7 @@ def create_single_link(short_urls):
     su = shortuuid.ShortUUID()
     '''create a random uuid of 5 chars'''
     id = su.random(length=5)
-    single_link = f'http://{os.environ.get("HOST")}/{id}/'
+    single_link = f'https://{os.environ.get("DOMAIN")}/{id}/'
 
     '''uddate the Single Link DB'''
     update_singlelink_db(id=id, single_link=single_link, short_urls=short_urls)
