@@ -20,7 +20,7 @@ server {
 
     include /etc/nginx/options-ssl-nginx.conf;
 
-    ssl_dhparams /vol/proxy/ssl-dhparams.pem;
+    ssl_dhparam /vol/proxy/ssl-dhparams.pem;
 
     add_header Strict-Transport-Security "max_age=31536000; includeSubDomains" always;
 
